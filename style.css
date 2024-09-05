@@ -144,6 +144,6 @@ header.discord {
 }
 
 .section.discord {
-  background-color: #333;  /* Discord color for sections */
-  color: #FFF;             /* Discord text color */
+  background-color: #F4D35E;  /* Discord color for sections */
+  color: #333;             /* Discord text color */
 }
