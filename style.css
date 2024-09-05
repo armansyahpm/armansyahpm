@@ -1,128 +1,76 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-}
-
+/* General Styles */
 body {
-  background-color: #f4f4f9;
-  color: #333;
-  line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
+/* Header Styles */
 header {
-  background-color: #0056d6;
-  color: white;
-  padding: 60px 0;
-}
-
-header h1 {
-  font-size: 3rem;
-}
-
-header .highlight {
-  color: #ffc107;
-}
-
-header p {
-  font-size: 1.25rem;
-}
-
-main {
-  padding: 40px 0;
-}
-
-.section {
-  background-color: white;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.about-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.about-text {
-  flex: 2;
-  text-align: left;
-}
-
-.about-photo {
-  flex: 1;
-  text-align: right;
-  padding-left: 20px;
-}
-
-.about-photo img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  color: #0056d6;
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-h3 {
-  margin-top: 10px;
-  font-size: 1.5rem;
-  color: #333;
-}
-
-p, ul {
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #0056d6;
-}
-
-ul li a:hover {
-  color: #ffc107;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
-}
-
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-  }
-
-  .about-photo {
     text-align: center;
-    margin-top: 20px;
-    padding-left: 0;
-  }
+    padding: 2rem;
+    background: linear-gradient(to right, #87CEEB, #FFFFFF);
+    color: #333;
+    transition: all 0.5s;
+}
+
+header.discord {
+    background: linear-gradient(to right, #FF6347, #FFD700);
+}
+
+/* Section Styles */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.harmony {
+    background-color: #E0F7FA;
+    color: #333;
+}
+
+.discord {
+    background-color: #FFCDD2;
+    color: #333;
+}
+
+#uni-journey p {
+    animation: discord-flash 2s ease-in-out infinite alternate;
+}
+
+/* Photo Section */
+.photo-section {
+    padding: 3rem 0;
+}
+
+.photo-section img {
+    max-width: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.photo-section img:hover {
+    transform: scale(1.1);
+    border: 5px solid #FF6347;
+}
+
+/* Footer Styles */
+footer {
+    padding: 2rem;
+    background-color: #FFEB3B;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes discord-flash {
+    0% { color: #333; background-color: #FFCDD2; }
+    100% { color: #FF6347; background-color: #FFD700; }
 }
